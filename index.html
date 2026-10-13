@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="NS2相册管理隐私政策：本机数据处理、USB 与目录访问、本地存储与删除、隐私选择及开发者联系。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>NS2相册管理隐私政策 · NSAlbum</title>
+<link rel="canonical" href="https://clay10096.github.io/nsalbum-support/">
+<style>
+:root{color-scheme:light dark;--bg:#f5f7fb;--surface:#fff;--text:#172536;--muted:#5d6b7c;--line:#dce3ed;--accent:#176fc5;--tint:#eef5fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:860px;margin:48px auto;padding:40px 44px;background:var(--surface);border:1px solid var(--line);border-radius:20px}
+.brand{margin:0 0 12px;color:var(--accent);font-size:14px;font-weight:650}
+h1{font-size:clamp(26px,5vw,36px);line-height:1.3;letter-spacing:-.02em;margin:0 0 14px}
+.meta{color:var(--muted);font-size:13px;margin:0 0 24px}code{overflow-wrap:anywhere}
+.summary{padding:20px 24px;background:var(--tint);border-radius:12px;border:1px solid var(--line);font-weight:550}
+nav{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 32px}nav a{border:1px solid var(--line);border-radius:8px;padding:5px 12px;font-size:14px;text-decoration:none}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+section{margin-top:32px}h2{font-size:20px;line-height:1.45;margin:0 0 14px}h3{font-size:18px;margin:24px 0 12px}
+p{margin:0 0 14px;overflow-wrap:anywhere}.contact{display:inline-block;padding:8px 16px;border:1px solid var(--line);border-radius:8px;text-decoration:none;font-weight:600}
+.english{border-top:1px solid var(--line);padding-top:32px;margin-top:40px}.english>h2{font-size:28px}
+footer{border-top:1px solid var(--line);padding-top:22px;margin-top:32px;color:var(--muted);font-size:13px}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1722;--surface:#172331;--text:#eaf0f7;--muted:#a5b3c4;--line:#314151;--accent:#77b7f4;--tint:#1c3045}}
+@media(max-width:640px){main{margin:0;border:0;border-radius:0;padding:28px 22px}.summary{padding:16px}nav{gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body,main{background:white;color:black}main{margin:0;border:0;max-width:none;padding:0}nav{display:none}a{color:inherit}}
+</style>
+</head>
+<body><main>
+<header><p class="brand">NS2相册管理 · 隐私与支持</p>
+<h1>NS2相册管理隐私政策</h1>
+<p class="meta">开发者：Clay10096（黏土）<br>生效日期：2026-10-13 · 更新日期：2026-10-13<br>应用标识：<code>com.clay.NSAlbum</code></p>
+<p class="summary">你的相册在本机处理。App 不要求注册账号，不内置广告或统计 SDK，不自动向开发者或其他服务器上传截图、视频或使用记录。</p>
+<nav aria-label="政策章节"><a href="#local-data">本机数据</a><a href="#retention">保存与缓存</a><a href="#choices">隐私选择与删除</a><a href="#contact">联系开发者</a><a href="#english" lang="en">English</a></nav></header>
+<section id="scope"><h2>1. 适用范围与开发者</h2><p>本政策由 Clay10096（黏土）发布，适用于 Bundle ID 为 com.clay.NSAlbum 的 macOS 应用「NS2相册管理」及本政策网页。App 用于通过 USB 浏览 Nintendo Switch 2 相册、将截图和视频下载到 Mac，并管理本地保存目录中的媒体。</p>
+<p>本政策说明当前版本的数据处理方式。你的媒体仍由你控制，使用相册功能不需要向开发者提供姓名、邮箱、Nintendo 账号或其他登录信息。</p></section>
+<section id="local-data"><h2>2. App 在本机访问哪些信息</h2><p>USB 连接信息：设备接口返回的设备名称、USB 厂商及产品标识、设备与存储信息、文件夹和文件标识，用于识别设备、建立连接和读取相册。底层 USB/MTP 接口可能读取设备描述信息；这些信息不会由 App 上传到服务器。</p>
+<p>相册与文件信息：游戏文件夹名称、文件名、文件类型、文件大小、拍摄或文件创建/修改时间、缩略图，以及你浏览、预览或下载的截图和视频内容，用于本地列表、搜索、分组、排序、预览与保存。搜索词仅用于当前界面筛选，不建立持久搜索历史。</p>
+<p>保存位置与偏好：你选择的文件夹路径及 macOS 安全作用域书签，以及主题、网格大小、排序、分组、文件名显示和缩略图模式等设置，用于记住你的选择并在后续启动时继续使用授权目录。</p>
+<p>本地诊断信息：连接状态、错误类型、USB 产品标识和目录数量等可能写入 macOS 系统日志，便于排查连接故障。底层库也可能输出本机诊断信息。App 没有自动发送日志或崩溃报告的功能。</p></section>
+<section id="use-permissions"><h2>3. 用途与访问权限</h2><p>上述信息仅用于你使用的相册和文件管理功能，不用于广告、跨 App 追踪、个人画像、数据出售或机器学习训练。App 不接入广告网络、行为统计服务或开发者运营的云相册。</p>
+<p>App 使用 macOS 沙盒中的 USB 访问、下载文件夹读写和用户选择文件夹读写权限。你通过系统文件夹选择器指定其他目录后，App 保存安全作用域书签以便下次访问。App 不要求访问联系人、位置、麦克风、摄像头或系统照片资料库。</p>
+<p>启动时默认读取设置中的本地保存目录。USB 相册连接由你的连接操作开启；开启连接后，App 可以监听 USB 插拔并尝试恢复连接。</p></section>
+<section id="sharing"><h2>4. 数据传输与第三方组件</h2><p>相册传输发生在你的 Nintendo Switch 2 与 Mac 之间。App 不会自动把媒体、文件信息、目录授权、设备信息或浏览操作传给开发者、广告商或其他服务器。开发者没有通过 App 接收或保管这些相册数据。</p>
+<p>App 使用 libmtp 和 libusb 在本机进行 USB 通讯，使用 Apple 系统框架生成缩略图和预览。这些库在本 App 中没有承担分析统计或向其维护者上传相册的功能。</p>
+<p>你选择通过 Finder、其他应用或自己的同步文件夹分享或保存文件时，后续处理受你选择的应用或服务的隐私规则约束。App 本身不发起云同步。</p></section>
+<section id="retention"><h2>5. 本地保存、缓存与保留时间</h2><p>下载的截图和视频保存在设置中的目录，默认是「下载 / Nintendo_Switch_Album」，按游戏分组。文件保留到你移动或删除它们为止。更改保存位置或卸载 App 不会自动删除该目录中的文件。</p>
+<p>目录索引、搜索状态和缩略图缓存主要保存在 App 进程内存中，退出 App 后释放。用于设备媒体预览的完整文件副本可能保存在 App 沙盒的临时目录 NintendoSwitchAlbum_QuickLook 中；当前版本不会在每次退出时保证立即删除这些预览副本，macOS 可以按系统规则清理临时文件。</p>
+<p>偏好设置、保存路径和目录书签保存在本机的 App 沙盒中，保留到你修改、清除设置或删除相应 App 数据为止。macOS 系统日志按系统的日志保留规则处理，App 不规定或延长其保留期限。</p></section>
+<section id="choices"><h2>6. 你的控制、撤回访问与删除</h2><p>你可以在设置中选择另一个保存文件夹，或点击「恢复默认」清除自选目录路径与授权书签，之后的本地扫描和下载使用默认目录。已经开始的读取或下载可能在结束前持有原目录访问权限；退出 App 可结束该进程的访问。</p>
+<p>你可以使用 App 的断开操作、退出 App，或断开 USB 连接来停止设备访问。退出 App 后不会继续在后台扫描你的相册。</p>
+<p>要删除已下载的媒体，可点击设置中的「在 Finder 中打开」，在 Finder 中移动到废纸篓或删除。要清除内存缓存，请退出 App。要清除残留预览副本和偏好设置，可在退出 App 后清理该应用的沙盒数据；清理沙盒不会替你删除单独保存在下载目录或自选目录的原文件。</p>
+<p>由于开发者没有服务器端相册副本，无法远程查看、修改或删除你的本地文件。如需删除指导或有隐私问题，可通过下方开发者联系入口提出请求。</p></section>
+<section id="web-support"><h2>7. 网页与主动联系开发者</h2><p>在线政策页面托管于 GitHub Pages。你主动在浏览器中打开政策、用户支持或开发者链接时，浏览器和对应网站可能处理 IP 地址、浏览器信息、Cookie 或访问日志，适用该网站自己的隐私政策。政策页面本身不添加广告、分析脚本、追踪像素、表单或外部字体。</p>
+<p>你通过 GitHub Issues 主动提交问题时，GitHub 会处理你的账号及提交内容，开发者可以看到你提交的信息，并将其用于答复问题或处理请求。此类内容不会由 App 自动发送。Issues 是公开渠道，请勿发布私人截图、设备序列号、密码或其他敏感信息；你可以编辑或关闭问题，删除相关内容可向 GitHub 请求协助。</p></section>
+<section id="security"><h2>8. 安全与儿童隐私</h2><p>App 使用 macOS 沙盒和系统文件夹授权限制访问范围。你也应保护 Mac 登录账户，并根据需要使用系统磁盘加密、备份和文件夹权限。任何本地存储都不能保证免受设备丢失、其他软件或账户被访问带来的风险。</p>
+<p>App 不要求年龄信息，不创建儿童或其他用户账号，也不通过 App 自动收集儿童个人信息。请监护人协助未成年用户管理本地文件和公开反馈内容。</p></section>
+<section id="changes"><h2>9. 政策更新</h2><p>数据处理方式发生变化时，我们会更新政策的修订日期，并通过新版 App 和在线页面提供更新内容。需要新增数据收集或权限时，会在启用相关功能前提供必要说明并依法取得所需同意。App 内的离线政策对应随该版本附带的文本，在线页面提供最新发布版本。</p></section>
+<section id="contact"><h2>10. 联系开发者</h2><p>开发者：Clay10096（黏土）。隐私咨询、数据处理说明或本地删除指导，请通过 NSAlbum 用户支持仓库的 Issues 联系我们。请仅提交解决问题所必需的信息。</p></section>
+<p><a class="contact" href="https://github.com/Clay10096/nsalbum-support/issues">联系开发者 · GitHub Issues</a></p>
+<section id="english" class="english" lang="en">
+<h2>NSAlbum Privacy Policy</h2>
+<p class="meta">Developer: Clay10096 (Clay)<br>Effective / Updated: 2026-10-13<br>Bundle ID: <code>com.clay.NSAlbum</code></p>
+<p class="summary">Your album is processed locally. The app requires no account and includes no advertising or analytics SDK. It does not automatically upload screenshots, videos, or usage records to the developer or other servers.</p>
+<section id="en-scope"><h3>1. Scope and developer</h3><p>This policy is published by Clay10096 (Clay) for the macOS app NS2相册管理 / NSAlbum, bundle identifier com.clay.NSAlbum, and this policy website. The app browses Nintendo Switch 2 albums over USB, downloads captures to your Mac, and manages media in the local save folder. Album features require no name, email, Nintendo account, or other account registration.</p></section>
+<section id="en-local-data"><h3>2. Information accessed locally</h3><p>USB information: device names, USB vendor/product identifiers, device and storage information, and folder/file identifiers returned by USB/MTP interfaces, used to identify the device and read the album. The underlying interfaces may read device descriptors; the app does not upload them.</p>
+<p>Album and file information: game folder names, filenames, media types, sizes, capture or file creation/modification times, thumbnails, and media you browse, preview, or download. These support local display, search, grouping, sorting, previews, and saving. Search text is used for the current view and is not saved as persistent search history.</p>
+<p>Preferences and access: save folder paths, macOS security-scoped bookmarks, theme, layout, sorting, grouping, filename display, and thumbnail preferences are stored locally to remember your choices.</p>
+<p>Local diagnostics: connection states, error types, USB product identifiers, and folder counts may be written to macOS system logs. USB libraries may also output local diagnostics. The app has no automatic log or crash report submission feature.</p></section>
+<section id="en-use-permissions"><h3>3. Purpose and permissions</h3><p>This information is used for album and file management, not advertising, cross-app tracking, profiling, data sales, or machine-learning training. The app has no advertising network, behavioral analytics service, or developer-operated cloud album.</p>
+<p>The macOS sandbox permits USB access, read/write access to Downloads, and read/write access to folders you select with the system picker. A security-scoped bookmark remembers a custom folder. The app does not request contacts, location, microphone, camera, or system Photos library access.</p>
+<p>The app opens the local save folder by default. You initiate USB connection; after that, it can monitor USB attachment and try to reconnect.</p></section>
+<section id="en-sharing"><h3>4. Transfers and third-party components</h3><p>Album transfers are between your Switch 2 and your Mac. The app does not automatically transmit media, metadata, folder permissions, device information, or browsing actions to the developer or other servers. The developer does not receive or hold your album through the app.</p>
+<p>libmtp and libusb provide local USB communication; Apple frameworks provide thumbnails and previews. They do not serve as analytics or upload your album to their maintainers in this app.</p>
+<p>If you use Finder, another app, or a folder synchronized by a service of your choice to share or store files, that service&#x27;s privacy practices apply. The app does not initiate cloud synchronization.</p></section>
+<section id="en-retention"><h3>5. Local storage and retention</h3><p>Downloads are saved by game in your configured folder, initially Downloads/Nintendo_Switch_Album. They remain until you move or delete them. Changing the folder or uninstalling the app does not automatically delete those files.</p>
+<p>Indexes, search state, and thumbnail caches are primarily in process memory and are released when the app exits. Full copies used for device media previews may remain in the app&#x27;s sandbox temporary folder NintendoSwitchAlbum_QuickLook. The current version does not guarantee immediate deletion of these copies on every exit; macOS may clean temporary files under its own rules.</p>
+<p>Preferences, folder paths, and bookmarks remain in the local app sandbox until changed, cleared, or the relevant app data is deleted. System log retention is controlled by macOS, not extended or specified by the app.</p></section>
+<section id="en-choices"><h3>6. Controls, withdrawal, and deletion</h3><p>Choose another save folder or use Restore Default in Settings to clear the custom path and bookmark. Future scans and downloads use the default folder. An in-flight operation may retain access to its original folder until it finishes; quitting ends the process&#x27;s access.</p>
+<p>Disconnect in the app, quit it, or unplug USB to stop device access. The app does not continue scanning your album in the background after it exits.</p>
+<p>Use Open in Finder in Settings to move downloaded files to Trash or delete them. Quit to clear memory caches. After quitting, you may remove the app&#x27;s sandbox data to clear residual preview copies and preferences; this does not delete original media saved separately in Downloads or a custom folder.</p>
+<p>There are no developer-held server copies of your album. We cannot remotely inspect, change, or delete your local files. Contact us below for deletion guidance or privacy questions.</p></section>
+<section id="en-web-support"><h3>7. Websites and voluntary support</h3><p>This website is hosted on GitHub Pages. When you choose to open a policy, support, or developer link in a browser, the browser and destination site may process IP addresses, browser information, cookies, or access logs under their own policies. This page adds no ads, analytics scripts, tracking pixels, forms, or external fonts.</p>
+<p>If you voluntarily submit a GitHub Issue, GitHub processes your account and submitted content, and the developer can read it to answer or handle the request. The app does not send it automatically. Issues are public: do not post private captures, device serial numbers, passwords, or other sensitive information. You may edit or close your issue and contact GitHub for help removing content.</p></section>
+<section id="en-security"><h3>8. Security and children</h3><p>The app uses the macOS sandbox and folder authorization to limit access. Protect your Mac account and use system encryption, backups, and folder permissions as appropriate. Local storage cannot eliminate risks from device loss, other software, or account access.</p>
+<p>The app does not request age information, create children&#x27;s or other user accounts, or automatically collect children&#x27;s personal information through the app. Guardians should help minors manage local media and public feedback.</p></section>
+<section id="en-changes"><h3>9. Changes</h3><p>We update the revision date and publish revised text in new app versions and on this page when our practices change. New data collection or permissions will be explained before use, with consent obtained as required. The offline copy matches the policy shipped with your app version; this website provides the latest published policy.</p></section>
+<section id="en-contact"><h3>10. Contact</h3><p>Developer: Clay10096 (Clay). For privacy questions, data handling information, or help deleting local data, contact us through Issues in the NSAlbum support repository. Share only information necessary to resolve the request.</p></section>
+<p><a class="contact" href="https://github.com/Clay10096/nsalbum-support/issues">Contact the developer · GitHub Issues</a></p>
+</section>
+<footer><p>页面托管于 GitHub Pages。访问外部服务适用其自己的隐私规则：<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub 隐私声明 / GitHub Privacy Statement</a>。</p>
+<p>本页面不添加广告、统计脚本或追踪像素。 / This page adds no ads, analytics scripts, or tracking pixels.</p></footer>
+</main></body></html>
